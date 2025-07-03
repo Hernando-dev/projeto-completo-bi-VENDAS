@@ -1,26 +1,3 @@
-# projeto-completo-bi-VENDAS
-Dashboard completo de Análise e Previsão de Vendas utilizando dados da NEOTASS (2020–2022). Projeto desenvolvido com Python, Pandas, Plotly, ARIMA e widgets interativos no Google Colab, focado em insights visuais, análise de desempenho, devoluções e projeção de faturamento.
-# 📊 Projeto de Análise e Previsão de Vendas
-
-Este projeto foi desenvolvido com o objetivo de consolidar e analisar dados de vendas, produtos, clientes, lojas e devoluções da empresa NEOTASS, utilizando Python e bibliotecas voltadas para análise de dados, visualização interativa e modelagem preditiva.
-
-Foram utilizadas ferramentas como **Google Colab**, **Plotly**, **Pandas** e o modelo **ARIMA**, permitindo a geração de dashboards interativos, KPIs estratégicos e uma projeção de vendas para os próximos 12 meses.
-
----
-
-## 📌 Objetivos do Projeto
-
-- 🧼 Tratar, limpar e unificar múltiplas bases de dados (.xlsx).
-- 📊 Criar gráficos e indicadores interativos de fácil interpretação.
-- 🔍 Gerar insights estratégicos por meio de análises temporais, geográficas e por categoria.
-- 📈 Projeção de vendas futuras com técnicas de séries temporais (ARIMA).
-- 💡 Suporte à tomada de decisão por meio de visualizações e comparações históricas.
-
----
-
-## 🗂️ Estrutura do Projeto
-
-```bash
 ├── notebooks/
 │   └── projeto_analise_vendas_neotass.ipynb
 ├── data/
@@ -119,4 +96,3 @@ Ernando Costa
 Análise de Dados | BI | Python | Power BI | Machine Learning
 📧 Email:ernandoferreiradacosta@gmail.com
 🔗 LinkedIn
-
