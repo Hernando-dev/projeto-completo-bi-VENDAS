@@ -1,98 +1,82 @@
-├── notebooks/
-│   └── projeto_analise_vendas_neotass.ipynb
-├── data/
-│   └── (pastas com os arquivos Excel)
-├── README.md
-├── requirements.txt
-└── vendas_completo.csv (output final)
-📥 Bases Utilizadas
-Arquivo	Descrição
-Base Vendas - 2020/2021/2022	Vendas realizadas por SKU, cliente, loja e data
-Cadastro Produtos.xlsx	Tabela mestre de produtos com preço, categoria e custo
-Cadastro Clientes.xlsx	Perfil dos clientes (sexo, escolaridade, ID, etc.)
-Cadastro Lojas.xlsx	Informações das lojas e seus colaboradores
-Cadastro Localidades.xlsx	Localização geográfica das lojas (cidade, estado, etc.)
-Base Devoluções.xlsx	Registros de devoluções e motivos por SKU e loja
+# Projeto Completo de BI - Análise e Previsão de Vendas
 
-📈 Principais Análises Realizadas
-✅ Dashboard Interativo com Filtros de Ano e Intervalo de Anos:
+## 📋 Descrição do Projeto
 
-Comparativo de vendas mensais (YTD)
+Este projeto tem como objetivo realizar uma análise completa dos dados de vendas, clientes, produtos e devoluções, utilizando técnicas de análise exploratória e visualização de dados. Além disso, aplicamos um modelo de previsão ARIMA para estimar as vendas futuras, auxiliando na tomada de decisões estratégicas.
 
-Ranking de lojas por faturamento
+---
 
-Faturamento por categoria e por colaborador
+## 🛠 Tecnologias Utilizadas
 
-Ticket médio geral
+- Python 3.x  
+- Pandas  
+- Plotly (visualização interativa)  
+- Seaborn (visualização estatística)  
+- Statsmodels (modelos estatísticos e previsão ARIMA)  
+- Jupyter Notebook / Google Colab  
 
-Faturamento por estado/continente
+---
 
-Devoluções por motivo, estado e produto
+## 🗂 Estrutura do Repositório
 
-Mapa de calor de correlação entre variáveis numéricas
+├── /imgs # Imagens e gráficos gerados
+├── /dados # Base de dados utilizada (se disponível)
+├── main.py # Script principal para execução das análises
+├── README.md # Documentação do projeto
+├── requirements.txt # Dependências necessárias para rodar o projeto
 
-✅ Previsão de Vendas:
-
-Modelo ARIMA (1,1,1) para prever os próximos 12 meses com gráfico de tendência
-
-Exibição de tabela com datas futuras e faturamento estimado
-
-🧠 Tecnologias e Bibliotecas Utilizadas
-Python 3.10+
-
-Google Colab
-
-pandas, openpyxl, matplotlib, seaborn, plotly, ipywidgets
-
-statsmodels (modelo ARIMA)
-
-🚀 Como Executar
-Monte seu Google Drive no Google Colab:
-
-python
+yaml
 Copiar
 Editar
-from google.colab import drive
-drive.mount('/content/drive')
-Crie uma pasta chamada NEOTASS_BASES com os arquivos Excel dentro.
 
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/Hernando-dev/projeto-completo-bi-VENDAS.git
+cd projeto-completo-bi-VENDAS
+(Recomendado) Crie e ative um ambiente virtual para isolar as dependências:
+
+bash
+Copiar
+Editar
+python -m venv env
+# Linux/Mac
+source env/bin/activate
+# Windows
+env\Scripts\activate
 Instale as dependências:
 
 bash
 Copiar
 Editar
-!pip install -q pandas==2.2.2 openpyxl plotly matplotlib seaborn statsmodels
-Execute o notebook projeto_analise_vendas_neotass.ipynb passo a passo.
+pip install -r requirements.txt
+Execute o script principal:
 
-📌 Principais KPIs Criados
-📌 Faturamento Total
+bash
+Copiar
+Editar
+python main.py
+Ou abra o notebook no Google Colab para uma análise interativa.
 
-📌 Ticket Médio Geral
+📊 Exemplos de Resultados
+Apresentamos abaixo alguns dos principais gráficos e resultados obtidos com o projeto:
 
-📌 Top 10 Produtos mais vendidos
 
-📌 Top 10 Produtos com maior taxa de devolução
+Mapa de calor destacando volumes de vendas por categoria
 
-📌 Projeção de Faturamento para os próximos 12 meses
 
-📌 Análise de impacto de colaboradores no faturamento
+Previsão das vendas para os próximos meses utilizando modelo ARIMA
 
-📌 Taxa de devolução por estado (região)
+📝 Conclusão
+Este projeto demonstra a aplicação prática de análise de dados e técnicas de previsão para apoiar decisões comerciais, identificar produtos com maiores taxas de devolução e antecipar tendências de vendas futuras. Pode ser utilizado como base para implementar melhorias estratégicas em empresas do setor varejista.
 
-📤 Exportação
-Ao final da execução, um arquivo vendas_completo.csv será salvo com todos os dados tratados e prontos para uso externo ou importação em sistemas de BI (Power BI, Tableau, etc).
+📞 Contato
+Caso queira conversar ou colaborar, me encontre em:
 
-📌 Melhorias Futuras
-Integração com Streamlit para publicação do dashboard em nuvem.
+GitHub: Hernando-dev
 
-Uso de Dash ou Power BI Embedded para visualização empresarial.
-
-Implementação de modelo SARIMA ou Prophet para comparar a performance do ARIMA.
-
-Aplicar validações automatizadas nas cargas dos arquivos.
-
-👨‍💻 Autor
-Ernando Costa
-Análise de Dados | BI | Python | Power BI | Machine Learning
-📧 Email:ernandoferreiradacosta@gmail.com
-🔗 LinkedIn
+Email: ernandoferreiradacosta@gmail.com
