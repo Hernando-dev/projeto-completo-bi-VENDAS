@@ -1,6 +1,6 @@
 # projeto-completo-bi-VENDAS
 Dashboard completo de Análise e Previsão de Vendas utilizando dados da NEOTASS (2020–2022). Projeto desenvolvido com Python, Pandas, Plotly, ARIMA e widgets interativos no Google Colab, focado em insights visuais, análise de desempenho, devoluções e projeção de faturamento.
-# 📊 Projeto de Análise e Previsão de Vendas | NEOTASS
+# 📊 Projeto de Análise e Previsão de Vendas
 
 Este projeto foi desenvolvido com o objetivo de consolidar e analisar dados de vendas, produtos, clientes, lojas e devoluções da empresa NEOTASS, utilizando Python e bibliotecas voltadas para análise de dados, visualização interativa e modelagem preditiva.
 
